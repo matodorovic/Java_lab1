@@ -16,7 +16,7 @@ public class InputPrices {
             ElPrices hourlyPrice = new ElPrices();
             String start = String.format("%02d",  i);
             String end = String.format("%02d",  i+1);
-            System.out.print("Kl " + start + "-" + end + ": ");
+            System.out.print("kl " + start + "-" + end + ": ");
             hourlyPrice.price = scanner.nextInt();
             hourlyPrice.startTime = start;
             hourlyPrice.endTime = end;
