@@ -1,4 +1,4 @@
-package org.elpriser;
+package org.elprices;
 
 import java.util.Scanner;
 

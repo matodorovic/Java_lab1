@@ -1,8 +1,6 @@
-package org.elpriser;
+package org.elprices;
 
-import java.util.Scanner;
-
-import static org.elpriser.Menu.menu;
+import static org.elprices.Menu.menu;
 
 public class Main {
     public static void main(String[] args) {

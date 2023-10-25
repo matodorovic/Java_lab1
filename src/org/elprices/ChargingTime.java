@@ -1,4 +1,4 @@
-package org.elpriser;
+package org.elprices;
 
 public class ChargingTime {
 

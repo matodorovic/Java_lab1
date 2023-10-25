@@ -1,4 +1,4 @@
-package org.elpriser;
+package org.elprices;
 
 import java.util.Scanner;
 
@@ -14,10 +14,12 @@ public class InputPrices {
 
         for( int i = 0; i < 24; i++) {
             ElPrices hourlyPrice = new ElPrices();
-            System.out.print("Kl " + i + " - " + (i+1) + ": ");
+            String start = String.format("%02d",  i);
+            String end = String.format("%02d",  i+1);
+            System.out.print("Kl " + start + "-" + end + ": ");
             hourlyPrice.price = scanner.nextInt();
-            hourlyPrice.startTime = Integer.toString(i);
-            hourlyPrice.endTime = Integer.toString(i+1);
+            hourlyPrice.startTime = start;
+            hourlyPrice.endTime = end;
             todaysPrices[i]  = hourlyPrice;
         }
     }
