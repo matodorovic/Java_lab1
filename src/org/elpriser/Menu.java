@@ -6,6 +6,7 @@ public class Menu {
     public static void menu() {
         Scanner scanner = new Scanner(System.in);
         String input;
+         ElPrices[] elArray = InputPrices.todaysPrices;
 
         do {
             System.out.println();
@@ -23,16 +24,16 @@ public class Menu {
 
             switch(input) {
                 case "1":
-                    Prices.elPrices();
+                    InputPrices.prices();
                     break;
                 case "2":
-                    MinMax.minMaxMedel();
+                    MinMax.minMaxMedel(elArray);
                     break;
                 case "3":
-                    Sort.sorting();
+                    Sort.sorting(elArray);
                     break;
                 case "4":
-                    ChargingTime.bestChargingTime();
+                    ChargingTime.bestChargingTime(elArray);
                     break;
                 case "e":
                     System.out.println("Programmet avslutat.");

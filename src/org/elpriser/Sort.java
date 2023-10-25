@@ -2,7 +2,7 @@ package org.elpriser;
 
 public class Sort {
 
-    public static void sorting() {
+    public static void sorting(ElPrices[] elArray) {
 
     }
 }
