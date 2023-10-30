@@ -10,7 +10,7 @@ public class ChargingTime {
             System.out.println("Först välj alternativ 1 för att mata in priser");
         } else {
 
-            int totalOf4 = 2147483647;
+            int totalOf4 = Integer.MAX_VALUE;
             String bestStartTime = "";
             String bestEndTime = "";
             int avaragaePrice = 0;
